@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 06 [ 18/01/2021 ]</title>
+</head>
+<body>
+   <h1> Script no HTML </h1>
+    <p>Comparação Html com script </p>
+    <script>
+        let num1 = 20;
+        let num2 = 17;
+        let resultado = num1 + num2;
+        console.log("Resultado:", resultado);
+        alert("Seja Bem Vindo!");
+
+        //Cálculo do IMC
+        let peso = 64;
+        let altura = 1.74;
+        let imc;
+        //document.write(imc);
+        
+
+        //Template string
+        //.toFixed = é para restringir quantas casas eu quero naquele número.
+        document.write(`IMC: ${imc = (peso / (altura * altura)).toFixed(2)}`);
+
+
+    </script>
+</body>
+</html>

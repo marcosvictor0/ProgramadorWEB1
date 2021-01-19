@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 06 [ 18/01/2021 ]</title>
+</head>
+<body>
+   <h1> Script no HTML </h1>
+    <h2>Conhecendo o getElementById</h2>
+
+    <div id="Adicao">Adição</div>
+    <div id="Subtracao">Subtração</div>
+    <div id="Divisao">Divisão</div>
+    <div id="Multiplicacao">Multiplicação</div>
+    <div id="potenciacao">potenciação</div>
+    <div id="Resto">Resto da divisão</div>
+
+    <h3>Lista Ordenadas e não ordenadas</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        let x = 10;
+        let y = 5;
+        let z = x + y;
+        let za = x - y;
+        let zb = x / y;
+        let zc = x * y;
+        let zd = x ** y;
+        let ze = x % y;
+        document.getElementById("Adicao").innerHTML = "Resultado:" + z;
+        document.getElementById("Subtracao").innerHTML = "Resultado:" + za;
+        document.getElementById("Divisao").innerHTML = "Resultado:" + zb;
+        document.getElementById("Multiplicacao").innerHTML = "Resultado:" + zc;
+        document.getElementById("potenciacao").innerHTML = "Resultado:" + zd;
+        document.getElementById("Resto").innerHTML = "Resultado:" + ze;
+        /*
+        document.write("Adição:" + z + "<br>" );
+        document.write("Subtração:" + za + "<br>");
+        document.write("Divisão:" + zb + "<br>");
+        document.write("Multiplicação:"+ zc + "<br>");
+        alert("Seja Bem Vindo!");
+        */
+    </script>
+</body>
+</html>
