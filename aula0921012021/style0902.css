@@ -1,0 +1,35 @@
+@charset "UTF-08";
+
+p,h2,h1,h3{
+    text-align: center;
+}
+
+#div_principal{
+    width: auto;
+}
+
+#cabecalho{
+    border-bottom: 10px solid rgb(188, 192, 201);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 1px;
+    padding-bottom: 15px;
+    box-shadow: 2px 2px 2px 2px;
+    background-size: 100% 100%;
+    background: rgb(165, 169, 204);
+}
+
+#cabecalho h1,h2,h3{
+    color: rgb(225, 231, 235);
+    margin-bottom: 0;
+    text-shadow: 0px rgb(177, 207, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ifra{
+    float: center;
+}
+
+#rodape{
+    text-align: right;
+}
