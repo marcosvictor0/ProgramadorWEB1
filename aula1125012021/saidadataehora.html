@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saida de data e Hora</title>
+</head>
+<body>
+    <h2>Mostrar formatação de Data e Hora</h2>
+    <p>
+        new date()<br>;
+        new date(<em>year, month, day , minutes, secunds, milisecunds</em>)
+        <br>
+        new date(<em>millisecunds</em>)
+        new date(<em>date string</em>)
+    </p>
+
+    <p>
+        <div id="dataehora"></div>
+        <div id="anomesdia"></div>
+        <div id="stringdata"></div>
+        <div id="secunds"></div>
+    </p>
+
+    <script>
+        let dt = new Date();
+
+        //document.getElementById("dataehora").innerHTML = dt;
+
+        document.getElementById("dataehora").innerHTML = dt.toString();
+
+        //document.getElementById('dataehora').innerHTML = dt.getFullYear();
+        let md = new Date(2021, 00, 25, 19, 21, 22);
+        document.getElementById('anomesdia').innerHTML = md;
+        let ds = new Date("January, 25, 2021, 19:35:20");
+        document.getElementById("stringdata").innerHTML = ds;
+        let seg = new Date("0");
+        document.getElementById("secunds").innerHTML = seg;
+    </script>
+</body>
+</html>
