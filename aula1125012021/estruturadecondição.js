@@ -53,7 +53,7 @@ else (n2 < n1)
     console.log(n2,"é menor que",n1);
 };
 */
-
+/*
 let hora = 19;
 
 if (hora <= 12 )
@@ -67,4 +67,19 @@ else if ( 18 > hora )
 else
 {
     console.log("Boa Noite!");
+};
+*/
+
+let amarelo = "amarelo";
+let verde = "verde";
+let vermelho = "vermelho";
+
+if (amarelo = "amarelo") {
+        console.log("Preste Atenção!")
+}
+else if ( verde = "verde") {
+    console.log("Pode passar!")
+}
+else {
+    console.log("Pare!")
 };
