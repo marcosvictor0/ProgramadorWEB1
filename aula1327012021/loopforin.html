@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA [ 26/01/2021 ]</title>
+</head>
+<body>
+    <h1>For no JS</h1>
+    <p>As instruções JavaScript percorre as propriedades de um objeto: for/in </p>
+    <p id="loopforin"></p>
+    <script>
+        let propri = "";
+        let pessoa ={pnome:"Marcos", sobrenome:"Costa", idade:20};
+        let p;
+
+        for (p in pessoa)
+        {
+            propri += pessoa[p] + " ";
+        }
+
+        document.getElementById("loopforin").innerHTML = propri;
+    </script>
+</body>
+</html>

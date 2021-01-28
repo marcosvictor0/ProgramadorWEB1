@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIA [ 26/01/2021 ]</title>
+</head>
+<body>
+    <h1>For no JS</h1>
+    <p id="loopfor"></p>
+    <script>
+        let carro =["Ferrari", "Ford", "Fiat", "Volvo", "Tesla"];
+        let texto = "";
+        let i;
+        for (i = 0; i < carro.length; i++)
+        {
+            texto += carro[i] + "<br>";
+        }
+
+        document.getElementById("loopfor").innerHTML = texto;
+    </script>
+</body>
+</html>
