@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 [ 01 / 02 / 2021 ]</title>
+</head>
+<body>
+    <h1>Aprendendo PostgreSQL</h1>
+    <p>Alguns comandos básicos</p>
+    <li>
+        <ol><strong> CREATE DATABASE </strong> cad_user <br> /SQL no Postgres - Criando Tabelas
+            CREATE TABLE cad_user ( <br>
+                id SERIAL PRIMARY KEY, <br>
+                nome VARCHAR (50) NOT NULL, <br>
+                telefonefixo VARCHAR (20), <br>
+                celular VARCHAR (20), <br>
+                email VARCHAR (50) NOT NULL <br>
+            ); </ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+    </li>
+
+    <p>--INSTRUÇÕES SELECT <br>
+        --Selecionar a tabela completa <br>
+        <br>
+        SELECT * FROM cad_user; <br>
+        --Selecionar um campo da tabela
+        <br>
+        <br>
+        SELECT nome,telefonefixo FROM cad_user; <br>
+        <br>
+        --Comando ORDER BY <br>
+        --Sintaxe <br> 
+        --SELECT * FROM nome_table ORDER BY critérios; <br>
+        SELECT * FROM cad_user ORDER BY nome; <br>
+        SELECT * FROM cad_user ORDER BY nome DESC;<br>
+        <br>
+        INSERT INTO cad_user (<br>
+            nome, telefonefixo, celular, email<br>
+        ) VALUES ( <br>
+            'Ester',<br>
+            '1111-1111',<br>
+            '2222-2222',<br>
+            'ester@hotmail.com'<br>
+        );<br>
+        <br>
+        INSERT INTO cad_user (<br>
+            nome, telefonefixo, celular, email<br>
+        ) VALUES<br>
+        (
+            <br>
+            'Leianny', <br>
+            '3333-4444', <br> 
+            '5555-6666',<br>
+            'leianny@hotmail.com'<br>
+        );
+        <br>
+        INSERT INTO cad_user (
+            nome, telefonefixo, celular, email<br>
+        ) VALUES (<br>
+            'Samya',<br>
+            '7777-7777',<br>
+            '8888-8888',<br>
+            'samya@hotmail.com'<br>
+        );
+        <br>
+        --USO DE ALIASES - AS<br>
+        --USO DE APELIDOS PARA MUDAR O NOME DA VARIÁVEL<br>
+        --Sintaxe: SELECT campo AS "Nome Completo", campo AS "Nome" FROM cad_user<br>
+        SELECT nome AS "Nome Completo", celular AS "cell" FROM cad_user<br>
+        --ALIASES NA TABELA<br>
+        SELECT a.nome FROM cad_user a;<br>
+        SELECT a.nome, a.telefonefixo, a.celular, a.email FROM cad_user a;<br>
+        <br>
+        --DECLARAÇÃO SELECT com clásula WHERE<br>
+        SELECT * FROM cad_user WHERE nome= 'Ester'<br>
+        <br>
+        --Usos de Operadores admitidos<br>
+        -- '=', '<>', '>', '<', '>=', '<=', BETWEEN, LIKE (SIMILAR), IN (na);<br>
+        -- SINTAXE: SELECT campo FROM nome_table condiçoes;<br>
+        SELECT a.id, a.nome, a.telefonefixo, a.celular, a.email FROM cad_user a WHERE id = 1;<br>
+        <br>
+        --USO DOS CORINGAS _(underline)e % (por cento);<br>
+        SELECT id, nome, telefonefixo, celular, email FROM cad_user WHERE nome = 'Marcos';<br>
+        <br>
+        --LIKE<br>
+        SELECT id, nome, telefonefixo, celular, email FROM cad_user WHERE nome LIKE ('_arco%');<br>
+        <br>
+        SELECT a.nome, a.telefonefixo, a.celular, a.email FROM cad_user WHERE nome LIKE ('_arco%');<br>
+        <br>
+        -- USANDO IN<br>
+        SELECT id, nome, telefonefixo, celular, email FROM cad_user WHERE id IN (1,4);<br>
+        </p>
+</body>
+</html>
