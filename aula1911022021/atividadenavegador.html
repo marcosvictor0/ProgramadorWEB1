@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 19 [ 11 / 02 / 2021 ]</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        function Carro()
+        {
+          var Marca = "Sem marca";
+          var Modelo = "Sem modelo";
+          var cor = "Sem cor";
+          var placa = "Sem Placa";
+          var marcapneu = "Sem marcapneu";
+          var marcaparabriza = "Sem marcaparabriza";
+          this.SetMarca = SetMarca;
+          this.SetModelo = SetModelo;
+          this.Setcor = Setcor;
+          this.Setplaca = Setplaca;
+          this.Setmarcapneu = Setmarcapneu;
+          this.Setmarcaparabriza = Setmarcaparabriza
+          this.ShowMarca = DisplayMarca;
+          this.ShowModelo = DisplayModelo;
+          this.Showcor = Displaycor;
+          this.Showplaca = Displayplaca;
+          this.Showmarcapneu = Displaymarcapneu;
+          this.Showmarcaparabriza = Displaymarcaparabriza;
+        
+          function DisplayMarca(){
+            alert(Marca);
+          }
+        
+          function DisplayModelo(){
+            alert(Modelo);
+          }
+        
+          function Displaycor(){
+            alert(cor);
+          }
+    
+          function Displayplaca(){
+            alert(placa);
+          }
+    
+          function Displaymarcapneu(){
+            alert(marcapneu);
+          }
+    
+          function Displaymarcaparabriza(){
+            alert(marcaparabriza);
+          }
+    
+          function SetMarca(_marca) {
+            Marca = _marca;
+          }
+        
+          function SetModelo(_modelo) {
+              Modelo = _modelo;
+          }
+    
+          function Setcor(_cor) {
+            cor = _cor;
+          }
+    
+          function Setplaca(_placa) {
+            placa = _placa;
+          }
+    
+          function Setmarcapneu(_marcapneu) {
+            marcapneu = _marcapneu;
+          }
+    
+          function Setmarcaparabriza(_marcaparabriza) {
+            marcaparabriza = _marcaparabriza;
+          }
+        
+          }
+          var carro = new Carro();
+          carro.SetMarca("Ford");
+          carro.SetModelo("Ka");
+          carro.setcor("Azul");
+          carro.placa("BRAB-100");
+          carro.marcapneu("Pirelli");
+          carro.marcaparabriza("Fanavid");
+          carro.ShowMarca();
+          carro.ShowModelo();
+          carro.Showcor();
+          carro.showplaca();
+          carro.showmarcapneu();
+          carro.showmarcaparabriza();
+        </script>
+</body>
+</html>

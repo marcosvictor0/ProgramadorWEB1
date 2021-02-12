@@ -1,0 +1,91 @@
+<html>
+    <head>
+    </head>
+        <body>
+    <script language="JavaScript">
+    function Carro()
+    {
+      var Marca = "Sem marca";
+      var Modelo = "Sem modelo";
+      var cor = "Sem cor";
+      var placa = "Sem Placa";
+      var marcapneu = "Sem marcapneu";
+      var marcaparabriza = "Sem marcaparabriza";
+      this.SetMarca = SetMarca;
+      this.SetModelo = SetModelo;
+      this.Setcor = Setcor;
+      this.Setplaca = Setplaca;
+      this.Setmarcapneu = Setmarcapneu;
+      this.Setmarcaparabriza = Setmarcaparabriza
+      this.ShowMarca = DisplayMarca;
+      this.ShowModelo = DisplayModelo;
+      this.Showcor = Displaycor;
+      this.Showplaca = Displayplaca;
+      this.Showmarcapneu = Displaymarcapneu;
+      this.Showmarcaparabriza = Displaymarcaparabriza;
+    
+      function DisplayMarca(){
+        alert(Marca);
+      }
+    
+      function DisplayModelo(){
+        alert(Modelo);
+      }
+    
+      function Displaycor(){
+        alert(cor);
+      }
+
+      function Displayplaca(){
+        alert(placa);
+      }
+
+      function Displaymarcapneu(){
+        alert(marcapneu);
+      }
+
+      function Displaymarcaparabriza(){
+        alert(marcaparabriza);
+      }
+
+      function SetMarca(_marca) {
+        Marca = _marca;
+      }
+    
+      function SetModelo(_modelo) {
+          Modelo = _modelo;
+      }
+
+      function Setcor(_cor) {
+        cor = _cor;
+      }
+
+      function Setplaca(_placa) {
+        placa = _placa;
+      }
+
+      function Setmarcapneu(_marcapneu) {
+        marcapneu = _marcapneu;
+      }
+
+      function Setmarcaparabriza(_marcaparabriza) {
+        marcaparabriza = _marcaparabriza;
+      }
+    
+      }
+      var carro = new Carro();
+      carro.SetMarca("Ford");
+      carro.SetModelo("Ka");
+      carro.Setcor("Azul");
+      carro.Setplaca("BRAB-100");
+      carro.Setmarcapneu("Pirelli");
+      carro.Setmarcaparabriza("Fanavid");
+      carro.ShowMarca();
+      carro.ShowModelo();
+      carro.Showcor();
+      carro.Showplaca();
+      carro.Showmarcapneu();
+      carro.Showmarcaparabriza();
+    </script>
+    </body>
+    </html>

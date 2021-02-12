@@ -1,0 +1,37 @@
+<html>
+    <body>
+      <script type="text/javascript">
+        carro = {
+            Marca : "Ford",
+            Modelo : "Ka",
+            Caracteristicas : ["Preto", 1.0, "2 portas"],
+    
+            exibirDetalhes : function(){
+              alert("Marca: " + this.Marca + " - Modelo: " + this.Modelo)
+            }
+        }
+    
+        carro.exibirDetalhes();
+        alert(carro.Caracteristicas[0])
+    
+        let Pessoa = [ "Maria", 30, "F" ]
+    
+        mapa = { 
+            lados: [
+            cantoSuperiorEsquerdo , "x:", 1 ,"y:", 1 ,
+            "cantoSuperiorDireito",  "x:", 10, "y:" , 1 ,
+            "cantoInferiorEsquerdo ",  "x:",  1, "y:", 10 ,
+            "cantoInferiorDireito " , "x:", 10, "y:", 10 
+            ],
+
+            exibirmapa : function() {
+                alert("CantoSuperiorEsquerdo:" + this.cantoSuperiorEsquerdo + "cantoSuperiorDireito:" + this.cantoInferiorDireito + "cantoInferiorEsquerdo:" + this.cantoInferiorEsquerdo + "cantoInferiorDireito:" + this.cantoInferiorDireito);
+            }
+        }
+
+        mapa.exibirmapa();
+        alert(mapa.lados[0]);
+
+      </script>
+    </body>
+    </html>

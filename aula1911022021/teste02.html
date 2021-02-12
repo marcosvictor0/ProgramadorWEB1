@@ -1,0 +1,52 @@
+<html>
+    <head>
+    </head>
+    <body>
+    <script language="JavaScript">
+    function Carro()
+    {
+      var Marca = "Sem marca";
+      var Modelo = "Sem modelo";
+      var cor = "sem cor";
+      this.SetMarca = SetMarca;
+      this.SetModelo = SetModelo;
+      this.Setcor = Setcor;
+      this.ShowMarca = DisplayMarca;
+      this.ShowModelo = DisplayModelo;
+      this.Showcor = Displaycor;
+    
+      function DisplayMarca(){
+        alert(Marca);
+      }
+    
+      function DisplayModelo(){
+        alert(Modelo);
+      }
+      function displaycor(){
+        alert(cor);
+      
+      }
+    
+      function SetMarca(_marca) {
+        Marca = _marca;
+      }
+    
+      function SetModelo(_modelo) {
+          Modelo = _modelo;
+      }
+    
+      function Setcor(_cor) {
+          cor = _cor;
+    
+      }
+    }
+      var carro = new Carro();
+      carro.SetMarca("Ford");
+      carro.SetModelo("Ka");
+      carro.Setcor("azul");
+      carro.ShowMarca();
+      carro.ShowModelo();
+      carro.Showcor();
+    </script>
+    </body>
+</html>
