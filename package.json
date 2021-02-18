@@ -1,0 +1,20 @@
+{
+  "name": "ProgramadorWEB",
+  "version": "1.0.0",
+  "description": "Aprendendo a fazer um site com HTML,CSS E JS",
+  "main": "comentario.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosvictor0/ProgramadorWEB1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosvictor0/ProgramadorWEB1/issues"
+  },
+  "homepage": "https://github.com/marcosvictor0/ProgramadorWEB1#readme"
+}
